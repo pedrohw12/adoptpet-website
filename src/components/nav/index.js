@@ -1,12 +1,12 @@
 import { Container, LogoName, LoginButton, SignUpButton } from "./styles";
 
-const Nav = () => {
+const Nav = ({ handleSignUp }) => {
   return (
     <Container>
       <LogoName>PETLOVE</LogoName>
       <div>
         <LoginButton>LOGIN</LoginButton>
-        <SignUpButton>SIGNUP</SignUpButton>
+        <SignUpButton onClick={handleSignUp}>SIGNUP</SignUpButton>
       </div>
     </Container>
   );
