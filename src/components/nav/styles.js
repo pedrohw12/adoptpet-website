@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   background-color: #005BEA;
@@ -44,3 +45,9 @@ export const SignUpButton = styled.button`
     opacity: 0.8;
   }
 `;
+
+export const MenuItem = styled(Link)`
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+`

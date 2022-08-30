@@ -1,18 +1,6 @@
-                    Homepage (Logged out)
+                        Homepage (Logged In)
 Components:
-Login/Signup button -> Login/Signup modal (triggered when the button is pressed)
-
-Header welcoming users to the site [OK]
-Text explaining what the service is. [OK]
-
-Link to the Search Page [OK]
-
-Signup Component (inside a modal):
-Should take an email address
-Password (twice to make sure passwords match)
-First and last name
-Phone number
-
-Login Component (inside a modal):
-Email address
-Password
+Header welcoming user by their first and last name
+Search button (can either be a link to search page or open modal of search component)
+Should have a link to → My Pets Page
+Has access to navigate to profile settings
