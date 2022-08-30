@@ -12,7 +12,7 @@ const WelcomeSection = () => {
         Maecenas turpis urna, volutpat a ligula lacinia, commodo pellentesque
         orci.
       </Description>
-      <SearchButton>SEARCH</SearchButton>
+      <SearchButton to="/search">SEARCH</SearchButton>
     </Container>
   );
 };

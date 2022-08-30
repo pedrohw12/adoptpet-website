@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -29,7 +30,7 @@ export const Description = styled.p`
   text-align: center;
 `;
 
-export const SearchButton = styled.button`
+export const SearchButton = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,14 +38,14 @@ export const SearchButton = styled.button`
   height: 57.52px;
   color: #000;
   clip-path: polygon(5% 13%, 100% 0, 93% 90%, 0 100%);
-  background: #04F9F2;
+  background: #04f9f2;
   border: none;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   cursor: pointer;
   transition: color 150ms ease-in-out;
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   font-style: normal;
   text-align: center;
   margin-top: 50px;
@@ -60,14 +61,14 @@ export const SearchButton = styled.button`
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
-    background-color: #005BEA;
+    background-color: #005bea;
     color: #fff;
     transition: transform 300ms ease-in-out;
     transform: scaleX(0);
@@ -91,4 +92,4 @@ export const SearchButton = styled.button`
     font-size: 40px;
     line-height: 48px;
   }
-`
+`;
