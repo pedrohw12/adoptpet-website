@@ -8,8 +8,8 @@ export const Container = styled.div`
   align-items: center;
   background-image: linear-gradient(
       0deg,
-      rgba(31, 23, 133, 0.8),
-      rgba(31, 23, 133, 0.1)
+      rgba(31, 23, 133, 0.5),
+      rgba(31, 23, 133, 0.5)
     ),
     url("/dog-bgImg.jpeg");
   background-size: cover;
