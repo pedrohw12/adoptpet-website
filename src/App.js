@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Footer from "./components/footer";
+import LoginModal from "./components/login-modal";
 import Nav from "./components/nav";
 import SignUpModal from "./components/signup-modal";
 import WelcomeSection from "./components/welcome-section";
@@ -9,16 +10,23 @@ import GlobalStyle from "./styles/global";
 
 function App() {
   const [isSignUpModalVisible, setIsSignUpModalVisible] = useState(false);
+  const [isLoginModalVisible, setIsLoginModalVisible] = useState(false);
 
   return (
     <div>
+      {isLoginModalVisible && (
+        <LoginModal onCloseLoginModal={() => setIsLoginModalVisible(false)} />
+      )}
       {isSignUpModalVisible && (
         <SignUpModal
           onCloseSignUpModal={() => setIsSignUpModalVisible(false)}
         />
       )}
       <GlobalStyle />
-      <Nav handleSignUp={() => setIsSignUpModalVisible(true)} />
+      <Nav
+        handleLogin={() => setIsLoginModalVisible(true)}
+        handleSignUp={() => setIsSignUpModalVisible(true)}
+      />
       <WelcomeSection />
       <WhoWeAre />
       <Footer />
