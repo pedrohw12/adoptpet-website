@@ -1,5 +1,5 @@
 import Nav from "./components/nav";
-// import WelcomeSection from "./components/welcome-section";
+import WelcomeSection from "./components/welcome-section";
 import GlobalStyle from "./styles/global";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div>
       <GlobalStyle />
       <Nav />
-      {/* <WelcomeSection /> */}
+      <WelcomeSection />
     </div>
   );
 }
