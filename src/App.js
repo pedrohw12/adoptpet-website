@@ -1,8 +1,13 @@
+import Nav from "./components/nav";
+// import WelcomeSection from "./components/welcome-section";
+import GlobalStyle from "./styles/global";
 
 function App() {
   return (
     <div>
-      <h1>hello</h1>
+      <GlobalStyle />
+      <Nav />
+      {/* <WelcomeSection /> */}
     </div>
   );
 }
